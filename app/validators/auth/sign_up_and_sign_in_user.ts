@@ -1,4 +1,5 @@
 import vine from '@vinejs/vine'
+import { UserRole } from '../../utils/enums.js'
 
 export const signUpValidator = vine.compile(
   vine.object({
@@ -11,6 +12,7 @@ export const signUpValidator = vine.compile(
         return result.length === 0
       }),
     password: vine.string().trim().minLength(6),
+    role: vine.enum(Object.values(UserRole)),
   })
 )
 
@@ -25,5 +27,6 @@ export const signInValidator = vine.compile(
         return result.length > 0
       }),
     password: vine.string().trim().minLength(6),
+    role: vine.enum(Object.values(UserRole)),
   })
 )
