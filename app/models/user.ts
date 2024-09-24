@@ -5,6 +5,7 @@ import hash from '@adonisjs/core/services/hash'
 import { DbAccessTokensProvider } from '@adonisjs/auth/access_tokens'
 import { withAuthFinder } from '@adonisjs/auth/mixins/lucid'
 import { compose } from '@adonisjs/core/helpers'
+import { UserRole } from '../utils/enums.js'
 
 const AuthFinder = withAuthFinder(() => hash.use('scrypt'), {
   uids: ['email'],
@@ -17,6 +18,24 @@ export default class User extends compose(UuidBase, AuthFinder) {
 
   @column()
   declare password: string
+
+  @column()
+  declare name: string
+
+  @column()
+  declare profilePicture: string
+
+  @column()
+  declare active: boolean
+
+  @column()
+  declare activationCode: string
+
+  @column()
+  declare activationCodeUsed: boolean
+
+  @column()
+  declare role: UserRole
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
