@@ -1,5 +1,5 @@
 {
-  "name": "Adonis_6_structure",
+  "name": "adonis",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -58,8 +58,7 @@
     "@vinejs/vine": "^2.1.0",
     "luxon": "^3.5.0",
     "pg": "^8.13.0",
-    "reflect-metadata": "^0.2.2",
-    "uuid": "^10.0.0"
+    "reflect-metadata": "^0.2.2"
   },
   "hotHook": {
     "boundaries": [
