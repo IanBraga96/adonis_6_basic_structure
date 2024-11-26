@@ -14,28 +14,22 @@ const AuthFinder = withAuthFinder(() => hash.use('scrypt'), {
 
 export default class User extends compose(UuidBase, AuthFinder) {
   @column()
+  declare name: string
+
+  @column()
   declare email: string
 
   @column()
   declare password: string
 
   @column()
-  declare name: string
-
-  @column()
-  declare profilePicture: string
-
-  @column()
-  declare active: boolean
+  declare role: UserRole
 
   @column()
   declare activationCode: string
 
   @column()
   declare activationCodeUsed: boolean
-
-  @column()
-  declare role: UserRole
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
