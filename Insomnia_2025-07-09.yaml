@@ -4,16 +4,16 @@ meta:
   id: wrk_27a109d62dcf4b52ab2cce2c6f3e8f9d
   created: 1752071915879
   modified: 1752071915879
-  description: ""
+  description: ''
 collection:
-  - url: "{{ _.base_url }}/auth/signIn"
+  - url: '{{ _.base_url }}/auth/signIn'
     name: signIn
     meta:
       id: req_f13ce9cd10ac4bc394f327b23892ef43
       created: 1738033700867
       modified: 1738034026464
       isPrivate: false
-      description: ""
+      description: ''
       sortKey: -1725467088941
     method: POST
     body:
@@ -22,17 +22,17 @@ collection:
         - id: pair_3337353cb95644ce99de82b82bcc4e98
           name: email
           value: ian@admin.com
-          description: ""
+          description: ''
           disabled: false
         - id: pair_900856cbc0214bf2a72af0fc42456017
           name: password
-          value: "123456"
-          description: ""
+          value: '123456'
+          description: ''
           disabled: false
         - id: pair_b0fddc880d6c4ca5ae7eef10f0d9a6b6
           name: role
           value: admin
-          description: ""
+          description: ''
           disabled: false
     headers:
       - name: Content-Type
@@ -47,14 +47,14 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.base_url }}/auth/signUp"
+  - url: '{{ _.base_url }}/auth/signUp'
     name: signUp
     meta:
       id: req_dc5316d8d4ca44db855c4e24bebe6d61
       created: 1738033700868
       modified: 1738034031692
       isPrivate: false
-      description: ""
+      description: ''
       sortKey: -1725467088991
     method: POST
     body:
@@ -63,17 +63,17 @@ collection:
         - id: pair_3337353cb95644ce99de82b82bcc4e98
           name: email
           value: ian@admin.com
-          description: ""
+          description: ''
           disabled: false
         - id: pair_900856cbc0214bf2a72af0fc42456017
           name: password
-          value: "123456"
-          description: ""
+          value: '123456'
+          description: ''
           disabled: false
         - id: pair_07bb241102c34261b50c54d6b9a7c729
           name: role
           value: admin
-          description: ""
+          description: ''
           disabled: false
     headers:
       - name: Content-Type
@@ -111,4 +111,4 @@ environments:
         sortKey: 1727191424079
       data:
         base_url: http://127.0.0.1:3000/development
-      color: "#00ff1e"
+      color: '#00ff1e'
