@@ -19,7 +19,6 @@ Este repositório oferece uma estrutura básica para o desenvolvimento de APIs u
    ```
 
 2. **Crie um arquivo `.env`**
-
    - Use o arquivo `.env.example` como referência, localizado na raiz do projeto.
 
 3. **Instale as dependências**

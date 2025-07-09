@@ -23,6 +23,4 @@ export default class AuthController {
     const data = await this.signInUseCase.run(signInDto)
     return response.ok(data)
   }
-
-  
 }
